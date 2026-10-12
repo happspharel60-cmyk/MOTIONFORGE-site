@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotionForge · Le studio vidéo IA qui tourne sur ton PC, sans abonnement</title>
+<meta name="description" content="Transforme un texte en vidéo animée, ta vidéo face caméra en montage pro et tes longues vidéos en clips TikTok. Voix française naturelle, 136 animations. Paiement unique en FCFA.">
+<meta name="theme-color" content="#0E0E12">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MotionForge · Le studio vidéo IA qui tourne sur ton PC">
+<meta property="og:description" content="Un texte devient une vidéo animée, avec voix off et sous-titres. Sans abonnement : un seul paiement en FCFA.">
+<meta property="og:image" content="/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/unbounded-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<!-- 1. Bandeau d'urgence -->
+<div class="topbar" id="topbar">
+  <span class="topbar-txt" id="topbarTxt"><b>Prix de lancement</b> · logiciel + 5 bonus offerts, réservé aux <span data-places-total>50</span> premiers clients</span>
+  <span class="countdown" id="countdown" hidden></span>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a href="#" class="brand" aria-label="MotionForge, accueil"><img src="/assets/img/logo-court.svg" alt="MotionForge" width="200" height="40"></a>
+    <a href="#offre" class="btn btn-sm">Voir les offres</a>
+  </div>
+</header>
+
+<main>
+
+<!-- 2. Hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Studio vidéo IA · Windows · Sans abonnement</p>
+      <h1>Ton script.<br><em>Ta vidéo animée.</em><br>Sans monteur.</h1>
+      <p class="lead">MotionForge transforme un simple texte en vidéo animée avec voix off française et sous-titres, monte tes vidéos face caméra et en tire des clips TikTok. <b>Sur ton PC, pour un seul paiement en FCFA.</b></p>
+      <ul class="checks">
+        <li>Même si tu n'as jamais monté une vidéo</li>
+        <li>Fonctionne hors ligne une fois installé : pas de data gaspillée</li>
+        <li>Paiement unique par Mobile Money ou carte, pas de dollars chaque mois</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#offre" class="btn btn-lg">Je veux MotionForge</a>
+        <p class="micro"><span class="price-from">dès <b data-price="createur">19 900 F</b></span> · Garantie 14 jours satisfait ou remboursé</p>
+      </div>
+    </div>
+    <figure class="hero-visual">
+      <div class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>MotionForge · localhost</span></div>
+        <img src="/assets/img/app-motionforge.jpg" alt="L'interface de MotionForge : choix du format, du style et zone pour écrire le script" width="1440" height="1060">
+      </div>
+      <figcaption>La vraie interface de MotionForge : choisis le format, le style, écris ton texte, lance le rendu.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3. Preuve : démonstration et témoignages (affichés quand ils existent) -->
+<section class="section" id="demo" hidden>
+  <div class="wrap narrow">
+    <p class="eyebrow center">Démonstration</p>
+    <h2 class="center">Cette vidéo a été entièrement créée avec MotionForge</h2>
+    <div class="video-frame" id="demoFrame"></div>
+  </div>
+</section>
+
+<section class="section" id="temoignages" hidden>
+  <div class="wrap">
+    <p class="eyebrow center">Ils l'utilisent</p>
+    <h2 class="center">Ce qu'en disent les créateurs</h2>
+    <div class="testis" id="testiList"></div>
+  </div>
+</section>
+
+<!-- 4. Problème -->
+<section class="section alt">
+  <div class="wrap narrow">
+    <p class="eyebrow">Tu te reconnais ?</p>
+    <h2>Tu sais que la vidéo fait vendre. Mais la produire te coûte trop.</h2>
+    <ul class="pains">
+      <li><b>Des heures sur CapCut</b> pour une vidéo de 1 minute, à placer chaque texte et chaque animation à la main.</li>
+      <li><b>Un monteur à payer à chaque vidéo</b>, et des délais qui ne suivent pas ton rythme de publication.</li>
+      <li><b>Des outils IA en abonnement</b>, payables en dollars, avec une carte bancaire internationale que tu n'as pas toujours.</li>
+      <li><b>Des vidéos qui font amateur</b> à côté de celles de tes concurrents, alors que ton expertise vaut mieux.</li>
+      <li><b>Tes longues vidéos dorment</b> sur YouTube, alors qu'elles pourraient devenir dix clips TikTok.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. Transformation -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow center">Imagine plutôt</p>
+    <h2 class="center">Du texte à la vidéo pro, pendant que tu fais autre chose</h2>
+    <div class="ab">
+      <div class="ab-col before">
+        <h3>Aujourd'hui</h3>
+        <ul>
+          <li>Une vidéo = une soirée de montage</li>
+          <li>Un monteur payé à chaque fois</li>
+          <li>Des abonnements en dollars</li>
+          <li>Une longue vidéo, publiée une fois</li>
+          <li>Un rendu qui n'inspire pas confiance</li>
+        </ul>
+      </div>
+      <div class="ab-arrow" aria-hidden="true">→</div>
+      <div class="ab-col after">
+        <h3>Avec MotionForge</h3>
+        <ul>
+          <li>Tu écris ton texte, l'ordinateur fait le montage</li>
+          <li>Des vidéos sans limite, pour un seul paiement</li>
+          <li>Tout tourne sur ton PC, en FCFA</li>
+          <li>Plusieurs clips verticaux tirés automatiquement</li>
+          <li>4 styles pro, 136 animations, sous-titres animés</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Coût de l'inaction -->
+<section class="section alt">
+  <div class="wrap narrow">
+    <p class="eyebrow">Et si tu ne changes rien ?</p>
+    <h2>Chaque semaine sans vidéo, ce sont des clients qui vont voir ailleurs</h2>
+    <p>Pendant que tu repousses ta prochaine vidéo, tes concurrents publient tous les jours, et l'algorithme les montre à <b>tes</b> futurs clients. Le temps passé à monter, tu ne le passes pas à vendre. Et chaque mois d'abonnement ou de monteur payé, c'est de l'argent qui ne revient pas.</p>
+  </div>
+</section>
+
+<!-- 7. Solution -->
+<section class="section" id="solution">
+  <div class="wrap">
+    <p class="eyebrow center">La solution</p>
+    <h2 class="center">MotionForge : 3 outils vidéo en un seul logiciel</h2>
+    <div class="modules">
+      <article class="module">
+        <span class="num">01</span>
+        <h3>Motion</h3>
+        <p class="mod-io"><b>Tu donnes :</b> un texte (ou ta voix enregistrée) et tes images.<br><b>Tu obtiens :</b> une vidéo animée avec voix off, sous-titres et sons, en 16:9, 9:16 ou 1:1.</p>
+        <p>Les chiffres, listes et prix de ton texte deviennent des animations. Un montant en FCFA ? Il s'affiche sur une étiquette de prix animée.</p>
+      </article>
+      <article class="module">
+        <span class="num">02</span>
+        <h3>Montage 16:9</h3>
+        <p class="mod-io"><b>Tu donnes :</b> ta vidéo brute face caméra.<br><b>Tu obtiens :</b> une vidéo propre, son nettoyé, couleurs corrigées, avec des animations sur environ 80 % du temps.</p>
+        <p>Les silences, les « euh » et les phrases recommencées sont coupés au mot près.</p>
+      </article>
+      <article class="module">
+        <span class="num">03</span>
+        <h3>Clipping 9:16</h3>
+        <p class="mod-io"><b>Tu donnes :</b> une vidéo longue.<br><b>Tu obtiens :</b> plusieurs clips verticaux pour TikTok, Reels et Shorts, avec titre d'accroche et sous-titres mot à mot.</p>
+        <p>Chaque clip reçoit une note sur 100 et ses raisons : tu gardes les meilleurs.</p>
+      </article>
+    </div>
+
+    <div class="features">
+      <div><b>Voix française naturelle</b><span>Les nombres, montants en FCFA et adresses web sont lus comme on les dit.</span></div>
+      <div><b>Hors ligne</b><span>Une fois installé, pas besoin d'Internet pour créer tes vidéos.</span></div>
+      <div><b>Aucune clé API</b><span>Pas de compte à créer chez un fournisseur d'IA, pas de crédits à acheter.</span></div>
+      <div><b>Storyboard modifiable</b><span>Change une scène, un texte ou une image, puis relance le rendu sans tout refaire.</span></div>
+      <div><b>1 500 dessins</b><span>Tes phrases sont illustrées automatiquement : « au marché », « à Douala », « trois clients »…</span></div>
+      <div><b>Contrôle qualité</b><span>Chaque vidéo est vérifiée avant que tu la publies.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Ce que tu reçois -->
+<section class="section alt" id="contenu">
+  <div class="wrap">
+    <p class="eyebrow center">Ce que tu reçois</p>
+    <h2 class="center">Une bibliothèque prête à l'emploi</h2>
+    <div class="stats">
+      <div><b>136</b><span>animations</span></div>
+      <div><b>19</b><span>styles de sous-titres</span></div>
+      <div><b>4</b><span>styles complets</span></div>
+      <div><b>3</b><span>formats</span></div>
+    </div>
+    <div class="styles">
+      <div class="style-chip s-edito"><b>Éditorial</b><span>clair, élégant, mots en italique doré</span></div>
+      <div class="style-chip s-neon"><b>Néon</b><span>sombre, coloré, effets glitch</span></div>
+      <div class="style-chip s-verre"><b>Verre</b><span>dégradés liquides, style pub produit</span></div>
+      <div class="style-chip s-classic"><b>Classique</b><span>noir et orange, sobre</span></div>
+    </div>
+    <p class="center sub">Quelques animations de la bibliothèque (aperçus) :</p>
+    <div class="gallery">
+      <img src="/assets/img/galerie/glitch-text.jpg" alt="Animation texte glitch" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/four-tone-mono-titler.jpg" alt="Titre style terminal" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/pixel-candlestick-ohlc.jpg" alt="Graphique boursier animé" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/pourover-drip-fill-gauge.jpg" alt="Jauge de pourcentage animée" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/parallax-pan.jpg" alt="Décor en parallaxe" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/shatter-reveal.jpg" alt="Titre révélé en éclats" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/loop-grid-wave.jpg" alt="Vague de points" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/gradient-text-sweep.jpg" alt="Texte en dégradé" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/pixel-typewriter-quote.jpg" alt="Citation machine à écrire" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/kinetic-word-stack.jpg" alt="Mots empilés animés" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/split-screen.jpg" alt="Écran partagé" loading="lazy" width="320" height="180">
+      <img src="/assets/img/galerie/logo-blur-reveal.jpg" alt="Logo qui sort du flou" loading="lazy" width="320" height="180">
+    </div>
+  </div>
+</section>
+
+<!-- 9. Bonus -->
+<section class="section" id="bonus">
+  <div class="wrap">
+    <p class="eyebrow center">Offerts avec le prix de lancement</p>
+    <h2 class="center">5 bonus pour réussir dès la première semaine</h2>
+    <div class="bonuses">
+      <article class="bonus"><span class="tag">Bonus 1 · Créateur+ et Studio</span><h3>Installation assistée à distance</h3><p>On installe MotionForge avec toi, en partage d'écran (30 min). Tu n'as rien de technique à faire.</p><p class="val">Valeur : <s>15 000 F</s> <b>offert</b></p></article>
+      <article class="bonus"><span class="tag">Bonus 2</span><h3>100 scripts vidéo prêts à l'emploi</h3><p>Accroches et scripts pour le commerce, le coaching, l'immobilier, la restauration, la beauté et les services. Copie, colle, rends.</p><p class="val">Valeur : <s>10 000 F</s> <b>offert</b></p></article>
+      <article class="bonus"><span class="tag">Bonus 3</span><h3>Formation « Ta 1re vidéo en 15 minutes »</h3><p>La prise en main pas à pas, plus un calendrier « 30 vidéos en 30 jours » pour publier sans panne d'idées.</p><p class="val">Valeur : <s>10 000 F</s> <b>offert</b></p></article>
+      <article class="bonus"><span class="tag">Bonus 4</span><h3>Groupe WhatsApp privé</h3><p>Pose tes questions, partage tes vidéos, avance avec les autres utilisateurs.</p><p class="val">Valeur : <s>10 000 F</s> <b>offert</b></p></article>
+      <article class="bonus"><span class="tag">Bonus 5</span><h3>Mises à jour de la version 1</h3><p>Les nouveaux styles, animations et améliorations de la version 1 te sont envoyés gratuitement.</p><p class="val">Valeur : <s>10 000 F</s> <b>offert</b></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Offre et prix -->
+<section class="section alt" id="offre">
+  <div class="wrap">
+    <p class="eyebrow center" data-launch-only>Prix de lancement</p>
+    <h2 class="center">Choisis ton offre</h2>
+    <p class="center sub" data-launch-only>Réservé aux <span data-places-total>50</span> premiers clients<span id="placesTxt"></span>. Ensuite, le prix repasse au tarif normal.</p>
+
+    <div class="stack">
+      <h3>Tout ce que contient l'offre Créateur+</h3>
+      <ul>
+        <li><span>MotionForge (licence 1 PC)</span><b>35 000 F</b></li>
+        <li><span>Bonus 1 · Installation assistée</span><b>15 000 F</b></li>
+        <li><span>Bonus 2 · 100 scripts vidéo</span><b>10 000 F</b></li>
+        <li><span>Bonus 3 · Formation 1re vidéo + calendrier</span><b>10 000 F</b></li>
+        <li><span>Bonus 4 · Groupe WhatsApp privé</span><b>10 000 F</b></li>
+        <li><span>Bonus 5 · Mises à jour version 1</span><b>10 000 F</b></li>
+        <li class="total"><span>Valeur totale</span><b><s>90 000 F</s></b></li>
+      </ul>
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <h3>Créateur</h3>
+        <p class="plan-for">Tu es à l'aise avec l'installation d'un logiciel</p>
+        <p class="price"><s data-launch-only>35 000 F</s> <b data-price="createur">19 900 F</b></p>
+        <p class="save" data-launch-only>Tu économises 15 100 F</p>
+        <ul>
+          <li>MotionForge, licence 1 PC</li>
+          <li>Bonus 2, 3, 4 et 5</li>
+          <li>Tutoriel vidéo d'installation</li>
+          <li>Garantie 14 jours</li>
+        </ul>
+        <a class="btn btn-block btn-outline" data-buy="createur" href="#offre">Choisir Créateur</a>
+      </article>
+      <article class="plan featured">
+        <span class="ribbon">Le plus populaire</span>
+        <h3>Créateur+</h3>
+        <p class="plan-for">On installe tout avec toi</p>
+        <p class="price"><s data-launch-only>50 000 F</s> <b data-price="createurPlus">27 900 F</b></p>
+        <p class="save" data-launch-only>Tu économises 22 100 F</p>
+        <ul>
+          <li>MotionForge, licence 1 PC</li>
+          <li><b>Installation assistée à distance</b></li>
+          <li>Les 5 bonus</li>
+          <li>Garantie 14 jours</li>
+        </ul>
+        <a class="btn btn-block" data-buy="createurPlus" href="#offre">Choisir Créateur+</a>
+      </article>
+      <article class="plan">
+        <h3>Studio</h3>
+        <p class="plan-for">Pour une petite équipe (3 personnes maximum)</p>
+        <p class="price"><s data-launch-only>90 000 F</s> <b data-price="studio">54 900 F</b></p>
+        <p class="save" data-launch-only>Tu économises 35 100 F</p>
+        <ul>
+          <li>MotionForge sur <b>3 PC</b></li>
+          <li>Installation assistée des 3 postes</li>
+          <li><b>1 h de coaching</b> vidéo</li>
+          <li>Les 5 bonus · Garantie 14 jours</li>
+        </ul>
+        <a class="btn btn-block btn-outline" data-buy="studio" href="#offre">Choisir Studio</a>
+      </article>
+    </div>
+    <p class="pay-note">Paiement sécurisé · Mobile Money (Orange Money, MTN MoMo, Wave) et carte bancaire · Paiement unique, aucun abonnement</p>
+    <p class="pay-note small">Configuration requise : Windows 10 ou 11, 8 Go de mémoire recommandés, environ 10 Go d'espace libre, Internet pour l'installation uniquement. Licence réservée aux particuliers, indépendants et structures de 3 personnes maximum.</p>
+  </div>
+</section>
+
+<!-- 11. Crédibilité -->
+<section class="section">
+  <div class="wrap narrow">
+    <p class="eyebrow">Pourquoi nous faire confiance</p>
+    <h2>On te dit tout, même ce qui ne se vend pas</h2>
+    <div class="facts">
+      <div><b>Conçu pour l'Afrique francophone</b><span>Voix française, montants en FCFA, lieux et expressions d'ici dans les illustrations.</span></div>
+      <div><b>Tes fichiers restent chez toi</b><span>Tout est calculé sur ton ordinateur : tes vidéos ne sont envoyées sur aucun serveur (sauf si tu actives le mode facultatif Studio Opus).</span></div>
+      <div><b>Des délais réalistes</b><span>Sur un PC sans carte graphique, compte environ 5 à 15 minutes de calcul pour 2 minutes de vidéo. Ton temps à toi : celui d'écrire le texte.</span></div>
+      <div><b>Installation une seule fois</b><span>20 à 40 minutes selon ta connexion. Avec Créateur+, on la fait avec toi.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. Garantie -->
+<section class="section alt">
+  <div class="wrap narrow guarantee">
+    <div class="seal" aria-hidden="true"><b>14</b><span>jours</span></div>
+    <div>
+      <p class="eyebrow">Zéro risque</p>
+      <h2>Garantie « ça marche chez toi »</h2>
+      <p>Si MotionForge ne fonctionne pas sur ton PC (avec la configuration requise) même après notre aide, ou si tu ne produis pas ta première vidéo dans les 14 jours, <b>on te rembourse 100 %</b>. Un message suffit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 13. Deux choix -->
+<section class="section">
+  <div class="wrap narrow center">
+    <h2>Tu as deux choix</h2>
+    <div class="choices">
+      <div class="choice"><h3>Continuer comme avant</h3><p>Des soirées de montage, des monteurs à payer, des abonnements en dollars, et des idées de vidéos qui restent dans ta tête.</p></div>
+      <div class="choice good"><h3>Passer à MotionForge</h3><p>Écrire ton texte, lancer le rendu, et publier des vidéos pro chaque semaine. Pour un seul paiement.</p></div>
+    </div>
+    <a href="#offre" class="btn btn-lg">Je choisis MotionForge</a>
+  </div>
+</section>
+
+<!-- 14. FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap narrow">
+    <p class="eyebrow">Questions fréquentes</p>
+    <h2>Tes questions, nos réponses</h2>
+    <details><summary>Je n'ai jamais fait de montage. C'est pour moi ?</summary><p>Oui. Tu écris ton texte, tu choisis un format et un style, et MotionForge fait les scènes, les animations, la voix et les sous-titres. La formation offerte te guide pour ta première vidéo.</p></details>
+    <details><summary>Est-ce que ça marche sur Mac ou sur téléphone ?</summary><p>Non, pour l'instant MotionForge fonctionne sur un ordinateur Windows 10 ou 11. Les vidéos produites, elles, se publient partout : TikTok, Reels, YouTube, Facebook, WhatsApp.</p></details>
+    <details><summary>Mon PC est-il assez puissant ?</summary><p>8 Go de mémoire sont recommandés et environ 10 Go d'espace libre. Pas besoin de carte graphique : sans elle, le rendu prend environ 5 à 15 minutes pour 2 minutes de vidéo. En cas de doute, écris-nous avant d'acheter avec le modèle de ton PC.</p></details>
+    <details><summary>Faut-il Internet ?</summary><p>Seulement pour l'installation (téléchargement des voix et des modèles). Ensuite, tu crées tes vidéos hors ligne.</p></details>
+    <details><summary>Y a-t-il un abonnement ou des frais cachés ?</summary><p>Non. Tu paies une fois et le logiciel est à toi. Un mode facultatif, « Studio Opus », peut utiliser un abonnement Claude que tu aurais déjà ; il n'est jamais nécessaire.</p></details>
+    <details><summary>Comment je reçois MotionForge après le paiement ?</summary><p>Tu reçois le lien de téléchargement et le guide d'installation juste après le paiement, plus l'accès aux bonus. Avec Créateur+ et Studio, on te contacte pour fixer l'installation à distance.</p></details>
+    <details><summary>Puis-je utiliser les vidéos pour mes clients ou mes publicités ?</summary><p>Oui, tu peux utiliser commercialement les vidéos que tu crées. Si tu utilises la voix de synthèse, il suffit d'ajouter la petite mention de source indiquée par l'application dans la description.</p></details>
+    <details><summary>Mon entreprise a plus de 3 salariés. Puis-je l'acheter ?</summary><p>La licence MotionForge vendue ici est réservée aux particuliers, indépendants et structures de 3 personnes maximum. Pour une structure plus grande, écris-nous avant d'acheter.</p></details>
+    <details><summary>Et si ça ne me convient pas ?</summary><p>Tu as 14 jours pour tester. Si MotionForge ne marche pas sur ton PC malgré notre aide, ou si tu ne produis pas ta première vidéo, on te rembourse 100 %.</p></details>
+  </div>
+</section>
+
+<!-- 15. Contact -->
+<section class="section" id="contact">
+  <div class="wrap narrow center">
+    <h2>Une question avant d'acheter ?</h2>
+    <p>Écris-nous, on te répond personnellement.</p>
+    <a class="btn btn-wa" id="waBtn" href="#contact" hidden>Nous écrire sur WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <img src="/assets/img/logo.svg" alt="MotionForge" width="180" height="43">
+    <nav id="legalLinks"></nav>
+    <p>© <span id="year">2026</span> MotionForge. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Bouton d'achat fixe sur mobile -->
+<div class="sticky-cta" id="stickyCta">
+  <div><b data-price="createurPlus">27 900 F</b><s data-launch-only>50 000 F</s></div>
+  <a href="#offre" class="btn">Voir les offres</a>
+</div>
+
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
