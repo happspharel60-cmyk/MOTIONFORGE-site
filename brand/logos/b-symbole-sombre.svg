@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="MotionForge · L'enclume">
+  <title>MotionForge · L'enclume</title>
+  <path d="M6 60 H118 V70 C106 70 96 74 92 84 V92 H104 V108 H24 V92 H36 V84 C33 77 26 72 6 68 Z" fill="#F6F1E7"/>
+  <path d="M50 18 L50 52 L80 35 Z" fill="#FF6A1A" stroke="#FF6A1A" stroke-width="8" stroke-linejoin="round"/>
+  <g stroke="#E8B04B" stroke-width="5" stroke-linecap="round">
+    <line x1="94" y1="30" x2="108" y2="24"/>
+    <line x1="92" y1="44" x2="110" y2="48"/>
+    <line x1="86" y1="16" x2="94" y2="6"/>
+  </g>
+  <path d="M112,3 Q112.686,9.314 119,10 Q112.686,10.686 112,17 Q111.314,10.686 105,10 Q111.314,9.314 112,3Z" fill="#E8B04B"/>
+</svg>

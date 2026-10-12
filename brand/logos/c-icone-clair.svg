@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="MotionForge · Monogramme MF">
+  <title>MotionForge · Monogramme MF</title>
+  <rect width="160" height="160" rx="36" fill="#F6F1E7"/>
+  <g transform="translate(16 16)">
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="#FF6A1A"/>
+  <g fill="none" stroke="#0E0E12" stroke-width="13" stroke-linejoin="miter" stroke-linecap="butt">
+    <path d="M26 98 V32 L52 70 L78 32 V98"/>
+    <path d="M78 38.5 H106"/>
+    <path d="M78 64 H100"/>
+  </g>
+  <path d="M104,86 Q104.98,95.02 114,96 Q104.98,96.98 104,106 Q103.02,96.98 94,96 Q103.02,95.02 104,86Z" fill="#0E0E12"/>
+  </g>
+</svg>
