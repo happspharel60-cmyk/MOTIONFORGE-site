@@ -78,18 +78,28 @@
   // --- Galerie : les animations se chargent et jouent seulement quand elles sont à l'écran ---
   var anims = $$(".lazy-anim");
   var calme = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var charger = function (v) { if (!v.src) { v.src = v.getAttribute("data-src"); } };
-  var jouer = function (v) { charger(v); var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+  var charger = function (v) {
+    if (!v.getAttribute("src")) {
+      v.muted = true; v.defaultMuted = true; v.playsInline = true;
+      var src = v.getAttribute("data-src");
+      if (!v.canPlayType('video/mp4; codecs="avc1.42E01E"')) src = src.replace(/\.mp4$/, ".webm");
+      v.src = src;
+      v.addEventListener("canplay", function () { if (v.dataset.visible === "1") essayer(v); });
+    }
+  };
+  var essayer = function (v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+  var jouer = function (v) { v.dataset.visible = "1"; charger(v); essayer(v); };
+  // Si le navigateur bloque la lecture automatique (mode économie d'énergie…), un toucher la lance
+  anims.forEach(function (v) { v.addEventListener("click", function () { v.paused ? jouer(v) : v.pause(); }); });
   if (calme || !("IntersectionObserver" in window)) {
     // Mouvement réduit : l'animation joue seulement au survol ou au toucher
     anims.forEach(function (v) {
       v.addEventListener("mouseenter", function () { jouer(v); });
       v.addEventListener("mouseleave", function () { v.pause(); });
-      v.addEventListener("click", function () { v.paused ? jouer(v) : v.pause(); });
     });
   } else {
     var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { e.isIntersecting ? jouer(e.target) : e.target.pause(); });
+      entries.forEach(function (e) { if (e.isIntersecting) { jouer(e.target); } else { e.target.dataset.visible = "0"; e.target.pause(); } });
     }, { rootMargin: "100px 0px", threshold: 0.25 });
     anims.forEach(function (v) { obs.observe(v); });
   }
