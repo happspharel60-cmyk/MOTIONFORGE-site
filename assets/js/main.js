@@ -72,7 +72,26 @@
   var vid = (C.videoDemoYoutube || "").trim();
   if (/^[\w-]{6,20}$/.test(vid)) {
     $("#demoFrame").innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + vid + '" title="Démonstration MotionForge" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>';
-    $("#demo").hidden = false;
+    $("#demoFrame").hidden = false;
+  }
+
+  // --- Galerie : les animations se chargent et jouent seulement quand elles sont à l'écran ---
+  var anims = $$(".lazy-anim");
+  var calme = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var charger = function (v) { if (!v.src) { v.src = v.getAttribute("data-src"); } };
+  var jouer = function (v) { charger(v); var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+  if (calme || !("IntersectionObserver" in window)) {
+    // Mouvement réduit : l'animation joue seulement au survol ou au toucher
+    anims.forEach(function (v) {
+      v.addEventListener("mouseenter", function () { jouer(v); });
+      v.addEventListener("mouseleave", function () { v.pause(); });
+      v.addEventListener("click", function () { v.paused ? jouer(v) : v.pause(); });
+    });
+  } else {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.isIntersecting ? jouer(e.target) : e.target.pause(); });
+    }, { rootMargin: "100px 0px", threshold: 0.25 });
+    anims.forEach(function (v) { obs.observe(v); });
   }
 
   // --- Témoignages (réels uniquement) ---

@@ -129,7 +129,16 @@ p { margin: 0 0 16px; }
 .s-classic { background: #0b0b0d; color: var(--cream); border-color: var(--orange); }
 .s-classic b { color: var(--orange); }
 .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.gallery img { border-radius: 10px; border: 1px solid var(--line); aspect-ratio: 16/9; object-fit: cover; width: 100%; }
+.anim { margin: 0; }
+.anim video { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); background: var(--ink-3); }
+.anim figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; text-align: center; }
+.examples { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 32px; align-items: start; }
+.example { margin: 0; }
+.example video { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); background: #000; box-shadow: 0 24px 60px -24px rgba(0,0,0,.8); }
+.example.tall video { max-width: 340px; margin: 0 auto; aspect-ratio: 9/16; }
+.example.wide video { aspect-ratio: 16/9; }
+.example figcaption { margin-top: 12px; font-size: 15px; text-align: center; }
+.example figcaption span { color: var(--muted); font-size: 14px; }
 
 /* Bonus */
 .bonuses { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
@@ -236,6 +245,7 @@ details p { color: var(--muted); margin: 0 0 20px; }
   .styles { grid-template-columns: repeat(4, 1fr); }
   .gallery { grid-template-columns: repeat(4, 1fr); }
   .bonuses { grid-template-columns: repeat(6, 1fr); }
+  .examples { grid-template-columns: 2.2fr 1fr; align-items: center; }
   .bonus { grid-column: span 2; }
   .bonus:nth-child(4) { grid-column: 2 / span 2; }
   .plans { grid-template-columns: repeat(3, 1fr); align-items: center; }

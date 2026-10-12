@@ -26,7 +26,7 @@ window.MF_CONFIG = {
     placesRestantes: null,
   },
 
-  // Identifiant de la vidéo de démonstration YouTube (ce qui suit "v=" dans le lien). Vide = section masquée.
+  // Vidéo YouTube en plus des deux exemples (ce qui suit "v=" dans le lien). Vide = rien de plus.
   videoDemoYoutube: "",
 
   // Témoignages RÉELS uniquement. Section masquée tant que la liste est vide.

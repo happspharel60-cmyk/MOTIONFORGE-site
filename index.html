@@ -55,19 +55,34 @@
     <figure class="hero-visual">
       <div class="window">
         <div class="window-bar"><i></i><i></i><i></i><span>MotionForge · localhost</span></div>
-        <img src="/assets/img/app-motionforge.jpg" alt="L'interface de MotionForge : choix du format, du style et zone pour écrire le script" width="1440" height="1060">
+        <img src="/assets/img/app-motionforge-rendu.jpg" alt="MotionForge en plein travail : le script est écrit, le format et le style choisis, une vidéo 9:16 est prête et la suivante est en cours de rendu" width="1440" height="1260" fetchpriority="high">
       </div>
-      <figcaption>La vraie interface de MotionForge : choisis le format, le style, écris ton texte, lance le rendu.</figcaption>
+      <figcaption>Capture réelle : une vidéo verticale terminée, la suivante en cours de rendu.</figcaption>
     </figure>
   </div>
 </section>
 
 <!-- 3. Preuve : démonstration et témoignages (affichés quand ils existent) -->
-<section class="section" id="demo" hidden>
-  <div class="wrap narrow">
+<section class="section" id="demo">
+  <div class="wrap">
     <p class="eyebrow center">Démonstration</p>
-    <h2 class="center">Cette vidéo a été entièrement créée avec MotionForge</h2>
-    <div class="video-frame" id="demoFrame"></div>
+    <h2 class="center">Deux vidéos créées avec MotionForge, sans retouche</h2>
+    <p class="center sub">Un texte de quelques lignes, un format, un style : voici ce qui sort du logiciel.</p>
+    <div class="examples">
+      <figure class="example wide">
+        <video controls muted playsinline preload="none" poster="/assets/video/exemples/boutique-neon-16x9.jpg" width="1280" height="720">
+          <source src="/assets/video/exemples/boutique-neon-16x9.mp4" type="video/mp4">
+        </video>
+        <figcaption><b>Publicité site vitrine</b> · 16:9 · style Néon · 20 s<br><span>Le montant en FCFA devient une étiquette de prix animée.</span></figcaption>
+      </figure>
+      <figure class="example tall">
+        <video controls muted playsinline preload="none" poster="/assets/video/exemples/script-editorial-9x16.jpg" width="540" height="960">
+          <source src="/assets/video/exemples/script-editorial-9x16.mp4" type="video/mp4">
+        </video>
+        <figcaption><b>Reel / TikTok</b> · 9:16 · style Éditorial · 15 s<br><span>Les mots du texte sont illustrés automatiquement.</span></figcaption>
+      </figure>
+    </div>
+    <div class="video-frame" id="demoFrame" hidden></div>
   </div>
 </section>
 
@@ -188,20 +203,20 @@
       <div class="style-chip s-verre"><b>Verre</b><span>dégradés liquides, style pub produit</span></div>
       <div class="style-chip s-classic"><b>Classique</b><span>noir et orange, sobre</span></div>
     </div>
-    <p class="center sub">Quelques animations de la bibliothèque (aperçus) :</p>
+    <p class="center sub">12 des 136 animations, telles que MotionForge les rend :</p>
     <div class="gallery">
-      <img src="/assets/img/galerie/glitch-text.jpg" alt="Animation texte glitch" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/four-tone-mono-titler.jpg" alt="Titre style terminal" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/pixel-candlestick-ohlc.jpg" alt="Graphique boursier animé" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/pourover-drip-fill-gauge.jpg" alt="Jauge de pourcentage animée" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/parallax-pan.jpg" alt="Décor en parallaxe" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/shatter-reveal.jpg" alt="Titre révélé en éclats" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/loop-grid-wave.jpg" alt="Vague de points" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/gradient-text-sweep.jpg" alt="Texte en dégradé" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/pixel-typewriter-quote.jpg" alt="Citation machine à écrire" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/kinetic-word-stack.jpg" alt="Mots empilés animés" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/split-screen.jpg" alt="Écran partagé" loading="lazy" width="320" height="180">
-      <img src="/assets/img/galerie/logo-blur-reveal.jpg" alt="Logo qui sort du flou" loading="lazy" width="320" height="180">
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/glitch-text.jpg" data-src="/assets/video/galerie/glitch-text.mp4" width="640" height="360" aria-label="Animation : Texte glitch"></video><figcaption>Texte glitch</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/four-tone-mono-titler.jpg" data-src="/assets/video/galerie/four-tone-mono-titler.mp4" width="640" height="360" aria-label="Animation : Titre terminal"></video><figcaption>Titre terminal</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/pixel-candlestick-ohlc.jpg" data-src="/assets/video/galerie/pixel-candlestick-ohlc.mp4" width="640" height="360" aria-label="Animation : Graphique boursier"></video><figcaption>Graphique boursier</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/pourover-drip-fill-gauge.jpg" data-src="/assets/video/galerie/pourover-drip-fill-gauge.mp4" width="640" height="360" aria-label="Animation : Jauge de pourcentage"></video><figcaption>Jauge de pourcentage</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/parallax-pan.jpg" data-src="/assets/video/galerie/parallax-pan.mp4" width="640" height="360" aria-label="Animation : Décor en parallaxe"></video><figcaption>Décor en parallaxe</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/shatter-reveal.jpg" data-src="/assets/video/galerie/shatter-reveal.mp4" width="640" height="360" aria-label="Animation : Révélation en éclats"></video><figcaption>Révélation en éclats</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/loop-grid-wave.jpg" data-src="/assets/video/galerie/loop-grid-wave.mp4" width="640" height="360" aria-label="Animation : Vague de points"></video><figcaption>Vague de points</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/gradient-text-sweep.jpg" data-src="/assets/video/galerie/gradient-text-sweep.mp4" width="640" height="360" aria-label="Animation : Mots qui s'allument"></video><figcaption>Mots qui s'allument</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/pixel-typewriter-quote.jpg" data-src="/assets/video/galerie/pixel-typewriter-quote.mp4" width="640" height="360" aria-label="Animation : Machine à écrire"></video><figcaption>Machine à écrire</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/kinetic-word-stack.jpg" data-src="/assets/video/galerie/kinetic-word-stack.mp4" width="640" height="360" aria-label="Animation : Mots empilés"></video><figcaption>Mots empilés</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/split-screen.jpg" data-src="/assets/video/galerie/split-screen.mp4" width="640" height="360" aria-label="Animation : Écran partagé"></video><figcaption>Écran partagé</figcaption></figure>
+      <figure class="anim"><video class="lazy-anim" muted loop playsinline preload="none" poster="/assets/video/galerie/logo-blur-reveal.jpg" data-src="/assets/video/galerie/logo-blur-reveal.mp4" width="640" height="360" aria-label="Animation : Logo qui sort du flou"></video><figcaption>Logo qui sort du flou</figcaption></figure>
     </div>
   </div>
 </section>
